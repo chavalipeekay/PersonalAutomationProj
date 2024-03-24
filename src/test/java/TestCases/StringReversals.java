@@ -12,7 +12,7 @@ public class StringReversals {
 
 	public static void main(String... args) {
 		
-//		Scanner sc=new Scanner(System.in);
+//		Scanner sc=new Scanner(System.in); // chenges here too
 		
 //		System.out.println("Enterr any string : ");
 //		String input = sc.next();
