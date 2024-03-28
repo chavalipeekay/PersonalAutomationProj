@@ -1,4 +1,4 @@
-package TestCases;
+package experimentsInterviews;
 
 import java.io.InputStream;
 import java.util.ArrayList;

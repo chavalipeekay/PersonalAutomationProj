@@ -1,4 +1,4 @@
-package TestCases;
+package experimentsInterviews;
 
 public class AnotherTestforGit {
 	// this is juust to test and  can be deleted

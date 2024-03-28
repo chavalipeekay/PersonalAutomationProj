@@ -1,4 +1,4 @@
-package TestCases;
+package experimentsInterviews;
 
 public class parentClass {
 
