@@ -1,11 +1,15 @@
 package TestCases;
 
 
+import java.io.IOException;
+
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.peekay.base.BaseClass;
+import com.peekay.dataProvider.GetExcelData;
 import com.peekay.pages.HomePage;
 import com.peekay.pages.LoginPage;
 
@@ -16,12 +20,23 @@ public class Login extends BaseClass{
 		HomePage homepage = loginPage.login();
 		Assert.assertTrue(homepage.welcomeIsDisplayed());
 		
+		
+		
 	}
 	
-	@Test(dataProvider = "rawData",enabled = false)
-	public void loginTest(String data1,String data2,String data3) {
+	@Test(dataProvider = "excelDataProvider" ,enabled = false)
+	public void loginTest(String data1,String data2,String data3,String data4) {
+//		System.out.println(data1 + " -> " +data2 + " -> " +data3 );
+		System.out.println(data1 + " -> " +data2 + " -> " +data3 + " -> " +data4);
 		
-		System.out.println(data1 + " -> " +data2 + " -> " +data3);
+		
+	}
+	
+	@DataProvider
+	public Object[][] excelDataProvider(){
+		Object [][] data= GetExcelData.getData("\\\\src\\\\test\\\\resources\\\\ExcelFiles\\\\SampleData.xlsx",
+				"Sheet1");
+		return data;
 	}
 	
 	@DataProvider(name="rawData")

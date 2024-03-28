@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Initiating Browser and navigating to URL!]]>
@@ -14,12 +14,12 @@
       <![CDATA[All browser sessions closed.]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-03-21T11:47:47 IST" name="Default suite" finished-at="2024-03-21T11:48:04 IST" duration-ms="16484">
+  <suite started-at="2024-03-28T16:15:07 IST" name="Default suite" finished-at="2024-03-28T16:15:25 IST" duration-ms="17979">
     <groups>
     </groups>
-    <test started-at="2024-03-21T11:47:47 IST" name="Default test" finished-at="2024-03-21T11:48:04 IST" duration-ms="16484">
-      <class name="TestCases.Logout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Logout@353352b6]" started-at="2024-03-21T11:47:47 IST" name="setup" finished-at="2024-03-21T11:47:55 IST" duration-ms="8203" status="PASS">
+    <test started-at="2024-03-28T16:15:07 IST" name="Default test" finished-at="2024-03-28T16:15:25 IST" duration-ms="17979">
+      <class name="TestCases.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:07 IST" name="setup" finished-at="2024-03-28T16:15:20 IST" duration-ms="12945" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Initiating Browser and navigating to URL!]]>
@@ -29,11 +29,267 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logoutTest()[pri:0, instance:TestCases.Logout@353352b6]" started-at="2024-03-21T11:47:55 IST" name="logoutTest" finished-at="2024-03-21T11:48:02 IST" duration-ms="6426" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Logout@353352b6]" started-at="2024-03-21T11:48:02 IST" name="tearDown" finished-at="2024-03-21T11:48:04 IST" duration-ms="1769" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user5@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user6@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user7@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user8@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 8]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user9@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 9]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="loginTest" data-provider="excelDataProvider" finished-at="2024-03-28T16:15:22 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass code 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Autentication code 10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[External auuten 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Login@5ddeb7cb]" started-at="2024-03-28T16:15:22 IST" name="tearDown" finished-at="2024-03-28T16:15:25 IST" duration-ms="2729" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing all  browser sessions!]]>
@@ -43,7 +299,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.Logout -->
+      </class> <!-- TestCases.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,7 +10,7 @@ import org.apache.poi.ss.formula.functions.DMax;
 
 public class StringReversals {
 
-	public static void main(String... args) {
+	public static void Main(String... args) { // changinging to Main to avoid accidental execution
 		
 //		Scanner sc=new Scanner(System.in); // chenges here too
 		
