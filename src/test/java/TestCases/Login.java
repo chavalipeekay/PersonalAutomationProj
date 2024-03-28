@@ -24,7 +24,7 @@ public class Login extends BaseClass{
 		
 	}
 	
-	@Test(dataProvider = "excelDataProvider" ,enabled = false)
+	@Test(dataProvider = "excelDataProvider" ,enabled = true)
 	public void loginTest(String data1,String data2,String data3,String data4) {
 //		System.out.println(data1 + " -> " +data2 + " -> " +data3 );
 		System.out.println(data1 + " -> " +data2 + " -> " +data3 + " -> " +data4);
@@ -34,7 +34,7 @@ public class Login extends BaseClass{
 	
 	@DataProvider
 	public Object[][] excelDataProvider(){
-		Object [][] data= GetExcelData.getData("\\\\src\\\\test\\\\resources\\\\ExcelFiles\\\\SampleData.xlsx",
+		Object [][] data= GetExcelData.getData("\\src\\test\\resources\\ExcelFiles\\SampleData.xlsx",
 				"Sheet1");
 		return data;
 	}
